@@ -1,7 +1,5 @@
 ## The first lesson
 
-
-
-
-  I'm QINQI
-
+- 黄以正
+- 王保键
+- 秦琦
