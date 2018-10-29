@@ -3,7 +3,7 @@
 
 ### 多人协作前必须掌握的基本技巧
 
-- 使用本地的 Git ，在当前项目根目录处选择打开一个 git bash here （Windows），macOS 的同学打开终端，cd 到当前项目的的根目录下，使用 git。
+- 使用本地的 Git ，在当前项目根目录处选择打开一个 git bash（Windows），macOS 的同学打开终端，cd 到当前项目的的根目录下，使用 git。
 - 在准备修改代码的时候，记得使自己的项目与上游项目保持一致（最新），这样可以避免不必要的冲突。
 
 
@@ -22,3 +22,10 @@
 - `git push origin` 或者是 `git push` 讲提交的修改推送到自己的 github fork 项目下。
 - 从 github 自己的项目中对上游项目发起合并请求 (Pull Request)。
 - PR 被上游仓库开发者审核、测试，最终合并。
+
+
+### 参考资料
+
+- [與其它開發者的互動 - 使用 Pull Request（PR）](https://gitbook.tw/chapters/github/pull-request.html)
+- [创建 Pull Request](https://github.com/geeeeeeeeek/git-recipes/wiki/3.3-%E5%88%9B%E5%BB%BA-Pull-Request)
+- [《Pro Git》git 学习最好的教材](https://bingohuang.gitbooks.io/progit2/content/)
