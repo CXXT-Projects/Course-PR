@@ -12,8 +12,6 @@ def defaultEncoding = 'UTF-8'
 buildscript {
     repositories {
         mavenCentral()
-        google()
-        gradlePluginPortal()
 
         maven {
             url "https://plugins.gradle.org/m2/"
