@@ -15,5 +15,5 @@ cache:
     - $HOME/.gradle/wrapper/      
 
 script: 
-  - cd lesson2
+  - cd ./lesson2/
   - gradle checkCode
