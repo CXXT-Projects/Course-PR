@@ -5,13 +5,9 @@ public class Sort {
     }
 
     public static void main(String[] args) {
-        int[] a = new int[]{10, 3, 2, 33, 6, 8, 9, 7};
+        int[] a = {1, 3, 2, 5, 6, 8, 9, 7};
         bubble_sort(a);
-        int[] var2 = a;
-        int var3 = a.length;
-
-        for(int var4 = 0; var4 < var3; ++var4) {
-            int i = var2[var4];
+        for(int i : a) {
             System.out.print(i);
         }
 
