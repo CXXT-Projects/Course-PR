@@ -5,11 +5,11 @@ public class Sort {
     }
 
     public static void main(String[] args) {
-        int[] a = {1, 3, 2, 5, 6, 8, 9, 7};
-        bubble_sort(a);
-        for(int i : a) {
-            System.out.print(i);
-        }
+//        int[] a = {1, 3, 2, 5, 6, 8, 9, 7};
+//        bubble_sort(a);
+//        for(int i : a) {
+//            System.out.print(i);
+//        }
 
     }
 
