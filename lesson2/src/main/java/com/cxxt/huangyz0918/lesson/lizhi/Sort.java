@@ -1,18 +1,12 @@
-package com.cxxt.huangyz0918.lesson.jackwang;
-
-/**
- * @author jackwang
- *     Created: Tue Nov 13 15:21:29 CST 2018
- */
+package com.cxxt.huangyz0918.lesson.lizhi;
 
 public class Sort {
-
     public static void main(String[] args) {
-//        int[] arr = {1, 2, 3, 8, 6, 4, 5, 7, 9};
-//        sort(arr);
-//        for (int i = 0; i < arr.length; i++) {
-//            System.out.println(arr[i]);
-//        }
+        int[] arr = {1, 2, 3, 8, 6, 4, 5, 7, 9};
+        sort(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 
     public static void sort(int[] arr) {
@@ -27,6 +21,4 @@ public class Sort {
             }
         }
     }
-
 }
-
