@@ -1,4 +1,6 @@
 # Course-PR
+[![Build Status](https://travis-ci.org/CXXT-Projects/Course-PR.svg?branch=master)](https://travis-ci.org/CXXT-Projects/Course-PR)
+
 开放性创新实验3 
 
 ### 多人协作前必须掌握的基本技巧
