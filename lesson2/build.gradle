@@ -1,0 +1,98 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'templates'
+apply plugin: "maven"
+apply plugin: 'idea'
+
+mainClassName = 'com.cxxt.huangyz0918.lesson.Two'
+
+def defaultEncoding = 'UTF-8'
+[compileJava, compileTestJava]*.options*.encoding = defaultEncoding
+
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+        maven {
+            url 'http://dl.bintray.com/cjstehno/public'
+        }
+    }
+    dependencies {
+        classpath 'gradle-templates:gradle-templates:1.4.1'
+    }
+}
+
+task getHomeDir {
+    doLast {
+        println gradle.gradleHomeDir
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+apply plugin: "pmd"
+//apply plugin: "findbugs"
+apply plugin: "checkstyle"
+
+checkstyle {
+    toolVersion = '6.12.1'
+    ignoreFailures = false
+    configFile = rootProject.file('./.config/checkstyle.xml')
+    configProperties.checkStyleConfigDir = rootProject.rootDir
+}
+
+task('checkstyle', type: Checkstyle) {
+    source 'src'
+    ignoreFailures false
+    showViolations true
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    classpath = files()
+}
+
+//findbugs {
+//    ignoreFailures = true
+//    sourceSets = [sourceSets.main]
+//    reportsDir = file("$project.buildDir/reports/findbugs")
+//    effort = "max"
+//}
+
+task pmd(type: Pmd) {
+    ignoreFailures = false
+    ruleSetFiles = files("${project.rootDir}/.config/pmd-ruleset.xml")
+    ruleSets = []
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        xml {
+            destination "$project.buildDir/reports/pmd/pmd.xml"
+        }
+        html {
+            destination "$project.buildDir/reports/pmd/pmd.html"
+        }
+    }
+}
+
+task checkCode(type: GradleBuild) {
+    tasks = ['pmd', 'checkstyle']
+}
