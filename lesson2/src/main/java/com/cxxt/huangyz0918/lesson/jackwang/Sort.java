@@ -1,7 +1,7 @@
-package com.cxxt.huangyz0918.lesson.JackWang;
+package com.cxxt.huangyz0918.lesson.jackwang;
 
 /**
- * @author JackWang
+ * @author jackwang
  *     Created: Tue Nov 13 15:21:29 CST 2018
  */
 
