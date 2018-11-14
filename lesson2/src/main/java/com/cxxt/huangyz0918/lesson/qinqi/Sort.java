@@ -7,8 +7,8 @@ import java.util.Arrays;
 * */
 public class Sort {
     public static void main(String[] args){
-        int[] t = {1,4,2,6,4,5,8,6};
-        bubbleSort(t);
+//        int[] t = {1,4,2,6,4,5,8,6};
+//        bubbleSort(t);
 //      System.out.println(Arrays.toString(t));
     }
 
