@@ -25,6 +25,10 @@
 - 从 github 自己的项目中对上游项目发起合并请求 (Pull Request)。
 - PR 被上游仓库开发者审核、测试，最终合并。
 
+### 保持fork的仓库以及本地仓库与原仓库一致
+- 获取原仓库 git fetch upstream
+- 将本地仓库同步到与原仓库一致 git merge upstream/master
+- 将本地仓库push到自己fork的仓库 git push origin master
 
 ### 参考资料
 
